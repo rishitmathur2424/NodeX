@@ -1,17 +1,20 @@
-# SRM BFHL — Full Stack Engineering Challenge
+# NodeX — Full Stack Engineering Challenge
 
 ## Project Structure
 
-```
-srm-bfhl/
-├── backend/          ← Express.js REST API
-│   ├── index.js
-│   └── package.json
-└── frontend/         ← Static HTML/CSS/JS frontend
-    ├── package.json
-    └── public/
-        └── index.html
-```
+backend/
+  ├── index.js        
+  ├── package.json    
+  ├── package-lock.json 
+
+frontend/
+  ├── public/
+  │   ├── index.html  
+  │   ├── logo.png    
+  ├── package.json    
+
+.gitignore            
+             
 
 ---
 
@@ -41,36 +44,7 @@ In the frontend, set the **API Endpoint** field to `http://localhost:3001/bfhl`.
 
 ---
 
-## ⚠️ Before Deploying — Update Your Details
-
-In `backend/index.js`, replace the identity fields at the top:
-
-```js
-const USER_ID = "johndoe_17091999";           // yourname_ddmmyyyy
-const EMAIL_ID = "john.doe@srmist.edu.in";    // your college email
-const COLLEGE_ROLL_NUMBER = "RA2111003010001"; // your roll number
-```
-
----
-
-## Deploying to Render (Backend)
-
-1. Push this repo to GitHub.
-2. Go to [render.com](https://render.com) → New → Web Service.
-3. Connect your GitHub repo.
-4. Set:
-   - **Root Directory**: `backend`
-   - **Build Command**: `npm install`
-   - **Start Command**: `node index.js`
-5. Deploy. Copy the URL (e.g. `https://bfhl-api.onrender.com`).
-
-## Deploying Frontend to Netlify
-
-1. Go to [netlify.com](https://netlify.com) → New Site → Deploy manually.
-2. Drag and drop the `frontend/public/` folder.
-3. After deploy, update the **API Endpoint** field in the UI to your Render URL.
-
-> Or use Vercel / Railway — any Node.js host works for the backend.
+e.js host works for the backend.
 
 ---
 
@@ -88,9 +62,9 @@ const COLLEGE_ROLL_NUMBER = "RA2111003010001"; // your roll number
 **Response:**
 ```json
 {
-  "user_id": "johndoe_17091999",
-  "email_id": "john.doe@srmist.edu.in",
-  "college_roll_number": "RA2111003010001",
+  "user_id": " ",
+  "email_id": "  @srmist.edu.in",
+  "college_roll_number": "RA..",
   "hierarchies": [
     { "root": "A", "tree": { "A": { "B": {}, "C": {} } }, "depth": 2 }
   ],
