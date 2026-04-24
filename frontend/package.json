@@ -1,0 +1,10 @@
+{
+  "name": "srm-bfhl-frontend",
+  "version": "1.0.0",
+  "description": "SRM Full Stack Challenge - Frontend",
+  "scripts": {
+    "start": "npx serve public -p 3000",
+    "dev": "npx serve public -p 3000"
+  },
+  "dependencies": {}
+}
